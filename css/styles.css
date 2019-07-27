@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&display=swap');
+
+/* Global */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #fffdf0;
+}
+
+fieldset {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+header {
+    background-color: #2d3945;
+    padding: 25px 0;
+}
+
+.headline {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.intro-section,
+.form-section,
+footer {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Intro section */
+.intro-section {
+    text-align: center;
+    padding: 2px;
+}
+
+.sub-heading {
+    color: #2d3945;
+    font-size: 1.4rem;
+}
+
+.description {
+    color: #aaafb4;
+    border-bottom: 4px solid #2d3945;
+    padding-bottom: 30px;
+    margin-bottom: 5px;
+}
+
+.field-title {
+    color: #2d3945;
+    display: block;
+    padding: 40px 0 5px 0;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-top: 2px solid #2d3945;
+}
+
+.contact-information,
+.newsletter {
+    border: none;
+    padding-bottom: 35px;
+}
+
+/* Contact information section */
+.contact-information label,
+.option  {
+    display: block;
+    color: #55687a;
+    margin-bottom: 7px;
+    margin-top: 20px;    
+}
+
+.contact-information input,
+select,
+textarea {
+    background-color: #eff0f1;
+    width: 100%;
+    border: 2px solid #eff0f1;
+    border-radius: 5px;
+    padding: 18px 18px;
+    font-size: 0.9rem;
+    transition: all .5s ease-out;
+    outline: none;
+}
+
+#zip {
+    width: 60%;
+}
+
+.contact-information input:focus,
+select:focus,
+textarea:focus {
+    border: 2px solid #46698b;
+}
+
+#name::placeholder,
+#email::placeholder {
+    text-align: right;
+    color: #a8adb2;
+    font-style: italic;
+}
+
+/* Newsletter section */
+.newsletter {
+    color: #6e7d8d;
+}
+
+.option {
+    color: #6e7d8d;
+    margin-top: 10px;
+}
+
+.option label {
+    margin-left: 5px;
+}
+
+#newsletter-type,
+#newsletter-format,
+#topic {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    color: #fff;
+    background-color: #4ebbb5;
+    border: 0;
+    padding: 20px 0;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+/* Footer section */
+.copyright {
+    color: #9da3a8;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9rem;
+    margin: 30px 0 200px 0;
+}
+
+/* Responsive design */
+@media all and (min-width: 768px) {
+
+    .intro-section,
+    .form-section,
+    footer {
+        width: 55%;
+        margin: 0 auto;
+    }
+
+    .description {
+        padding-bottom: 60px;
+    }
+
+    .contact-information label {
+        display: inline-block;
+        width: 19%;
+    }
+
+    .contact-information input,
+    select {
+        display: inline-block;
+        width: 76%;
+        margin-left: 4%;
+    }
+
+    #zip {
+        width: 30%;
+    }
+
+    .input-wrapper {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
